@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Atelier Bama, menuiserie artisanale et mobilier sur mesure."
+    />
+    <title>Atelier Bama | Menuiserie artisanale</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#accueil">Atelier Bama</a>
+      <nav aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#realisations">Realisations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="accueil">
+      <section class="hero">
+        <p class="eyebrow">Menuiserie artisanale</p>
+        <h1>Des espaces penses et fabriques pour durer.</h1>
+        <p>
+          Mobilier sur mesure, agencement interieur et restauration de meubles.
+        </p>
+        <a class="button" href="#contact">Demander un devis</a>
+      </section>
+
+      <section id="services">
+        <p class="eyebrow">Savoir-faire</p>
+        <h2>Des pieces adaptees a votre espace.</h2>
+
+        <div class="services-grid">
+          <article>
+            <h3>Mobilier sur mesure</h3>
+            <p>
+              Tables, bibliotheques et meubles de rangement concus selon vos
+              besoins.
+            </p>
+          </article>
+
+          <article>
+            <h3>Agencement interieur</h3>
+            <p>
+              Optimisez chaque metre carre avec des solutions fonctionnelles
+              et durables.
+            </p>
+          </article>
+
+          <article>
+            <h3>Restauration de meubles</h3>
+            <p>Redonnez une seconde vie aux meubles auxquels vous tenez.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="realisations">
+        <p class="eyebrow">Portfolio</p>
+        <h2>Quelques projets realises a l'atelier.</h2>
+
+        <div class="projects-grid">
+          <article class="project">
+            <div class="project-image image-kitchen"></div>
+            <h3>Bibliotheque en chene</h3>
+            <p>Agencement sur mesure pour un salon lumineux.</p>
+          </article>
+
+          <article class="project">
+            <div class="project-image image-table"></div>
+            <h3>Table familiale</h3>
+            <p>Table en bois massif, pensee pour les repas du quotidien.</p>
+          </article>
+
+          <article class="project">
+            <div class="project-image image-desk"></div>
+            <h3>Bureau integre</h3>
+            <p>Un espace de travail discret, adapte a un petit interieur.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <p class="eyebrow">Contact</p>
+        <h2>Parlons de votre projet.</h2>
+        <p>
+          Decrivez votre besoin et recevez une premiere reponse sous 48 heures.
+        </p>
+
+        <form class="contact-form">
+          <div>
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div>
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div>
+            <label for="message">Votre projet</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
+
+          <button type="submit">Envoyer la demande</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Atelier Bama - Menuiserie artisanale</p>
+      <p>06 12 34 56 78 - contact@atelierbama.fr</p>
+      <p>Paris et petite couronne</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
