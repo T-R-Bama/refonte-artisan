@@ -12,46 +12,71 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="logo" href="#accueil">Atelier Bama</a>
-      <nav aria-label="Navigation principale">
-        <a href="#services">Services</a>
-        <a href="#realisations">Realisations</a>
+      <a class="logo" href="#accueil">Atelier Bama<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        Menu
+      </button>
+      <nav id="main-nav" aria-label="Navigation principale">
+        <a href="#services">Expertise</a>
+        <a href="#realisations">Projets</a>
+        <a href="#methode">Méthode</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="accueil">
       <section class="hero">
-        <p class="eyebrow">Menuiserie artisanale</p>
-        <h1>Des espaces penses et fabriques pour durer.</h1>
-        <p>
-          Mobilier sur mesure, agencement interieur et restauration de meubles.
-        </p>
-        <a class="button" href="#contact">Demander un devis</a>
+        <div class="hero-content">
+          <p class="eyebrow">Menuiserie artisanale à Paris</p>
+          <h1>Le bois, façonné pour votre quotidien.</h1>
+          <p>
+            Atelier Bama imagine et fabrique des pièces uniques, du premier croquis
+            à la dernière finition.
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">Demander un devis</a>
+            <a class="text-link" href="#realisations">Voir les projets <span aria-hidden="true">&#8594;</span></a>
+          </div>
+          <div class="trust-row" aria-label="Engagements de l'atelier">
+            <span>Fabrication locale</span>
+            <span>Bois sélectionnés</span>
+            <span>Finitions durables</span>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="assets/images/pexels-ha-sanh-968192-16923833.jpg" alt="Détail d'un meuble en bois dans un atelier" />
+          <span class="image-caption">Chaque détail compte</span>
+        </div>
       </section>
 
       <section id="services">
-        <p class="eyebrow">Savoir-faire</p>
-        <h2>Des pieces adaptees a votre espace.</h2>
+        <div class="section-heading">
+            <p class="eyebrow">Savoir-faire</p>
+          <h2>Une expertise qui donne forme à vos idées.</h2>
+          <p>Du fonctionnel au singulier, nous cherchons le bon équilibre entre usage, matière et lumière.</p>
+        </div>
 
         <div class="services-grid">
-          <article>
+          <article class="service-card">
+            <span class="card-number">01</span>
             <h3>Mobilier sur mesure</h3>
             <p>
-              Tables, bibliotheques et meubles de rangement concus selon vos
+              Tables, bibliothèques et meubles de rangement conçus selon vos
               besoins.
             </p>
           </article>
 
-          <article>
-            <h3>Agencement interieur</h3>
+          <article class="service-card">
+            <span class="card-number">02</span>
+            <h3>Agencement intérieur</h3>
             <p>
-              Optimisez chaque metre carre avec des solutions fonctionnelles
+              Optimisez chaque mètre carré avec des solutions fonctionnelles
               et durables.
             </p>
           </article>
 
-          <article>
+          <article class="service-card">
+            <span class="card-number">03</span>
             <h3>Restauration de meubles</h3>
             <p>Redonnez une seconde vie aux meubles auxquels vous tenez.</p>
           </article>
@@ -59,38 +84,144 @@
       </section>
 
       <section id="realisations">
-        <p class="eyebrow">Portfolio</p>
-        <h2>Quelques projets realises a l'atelier.</h2>
+        <div class="section-heading heading-with-action">
+          <div>
+            <p class="eyebrow">Portfolio</p>
+            <h2>Des projets qui trouvent leur place.</h2>
+          </div>
+          <div class="project-filters" aria-label="Filtrer les projets">
+            <button class="filter-button is-active" type="button" data-filter="all">Tous</button>
+            <button class="filter-button" type="button" data-filter="mobilier">Mobilier</button>
+            <button class="filter-button" type="button" data-filter="agencement">Agencement</button>
+          </div>
+        </div>
 
         <div class="projects-grid">
-          <article class="project">
-            <div class="project-image image-kitchen"></div>
-            <h3>Bibliotheque en chene</h3>
+          <article class="project" data-category="agencement">
+            <img
+              class="project-image"
+              src="assets/images/pexels-aboodi-18620048.jpg"
+              alt="Meuble en bois réalisé sur mesure"
+            />
+            <h3>Bibliothèque en chêne</h3>
             <p>Agencement sur mesure pour un salon lumineux.</p>
           </article>
 
-          <article class="project">
-            <div class="project-image image-table"></div>
+          <article class="project" data-category="mobilier">
+            <img
+              class="project-image"
+              src="assets/images/pexels-curtis-adams-1694007-24245782.jpg"
+              alt="Table en bois dans un intérieur"
+            />
             <h3>Table familiale</h3>
-            <p>Table en bois massif, pensee pour les repas du quotidien.</p>
+            <p>Table en bois massif, pensée pour les repas du quotidien.</p>
           </article>
 
-          <article class="project">
-            <div class="project-image image-desk"></div>
-            <h3>Bureau integre</h3>
-            <p>Un espace de travail discret, adapte a un petit interieur.</p>
+          <article class="project" data-category="agencement">
+            <img
+              class="project-image"
+              src="assets/images/pexels-cottonbro-5089159.jpg"
+              alt="Établi de menuisier dans un atelier"
+            />
+            <h3>Bureau intégré</h3>
+            <p>Un espace de travail discret, adapté à un petit intérieur.</p>
           </article>
         </div>
       </section>
 
-      <section id="contact">
-        <p class="eyebrow">Contact</p>
-        <h2>Parlons de votre projet.</h2>
-        <p>
-          Decrivez votre besoin et recevez une premiere reponse sous 48 heures.
-        </p>
+      <section id="methode" class="method-section">
+        <div class="section-heading">
+            <p class="eyebrow">Méthode</p>
+          <h2>Un déroulé simple, du croquis à la pose.</h2>
+          <p>Chaque étape est partagée avec vous pour que le projet reste clair et serein.</p>
+        </div>
+        <div class="method-grid">
+          <article><span class="card-number">01</span><h3>Écouter</h3><p>Nous précisons vos usages, vos envies et les contraintes de votre intérieur.</p></article>
+          <article><span class="card-number">02</span><h3>Concevoir</h3><p>Nous dessinons une solution juste, puis choisissons ensemble les matériaux.</p></article>
+          <article><span class="card-number">03</span><h3>Fabriquer</h3><p>Votre pièce prend vie dans notre atelier avant d'être installée chez vous.</p></article>
+        </div>
+      </section>
 
-        <form class="contact-form">
+      <section class="quote-section">
+        <p class="eyebrow">La parole aux clients</p>
+        <blockquote>« Un meuble magnifique, parfaitement adapté à notre salon. L'écoute et le soin apporté aux finitions ont fait toute la différence. »</blockquote>
+        <cite>Claire M. - Bibliothèque sur mesure</cite>
+      </section>
+
+      <section class="news-section">
+        <div class="section-heading heading-with-action">
+          <div>
+            <p class="eyebrow">Actualités</p>
+            <h2>Les dernières nouvelles de l'atelier.</h2>
+          </div>
+          <button class="section-toggle" type="button" aria-expanded="false">
+            <span>Afficher les actualités</span><strong aria-hidden="true">+</strong>
+          </button>
+        </div>
+        <div class="section-content">
+          <article class="news-item">
+            <div class="news-date">Projet du mois / mai 2026</div>
+            <div>
+              <h3>Une entrée sur mesure pour gagner en rangement.</h3>
+              <p>Un ensemble de patères et de rangements intégrés, pensé pour simplifier les retours à la maison.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="practical-section">
+        <div class="section-heading heading-with-action">
+          <div>
+            <p class="eyebrow">Infos pratiques</p>
+            <h2>Les informations utiles, au bon endroit.</h2>
+          </div>
+          <button class="section-toggle" type="button" aria-expanded="false">
+            <span>Afficher les informations</span><strong aria-hidden="true">+</strong>
+          </button>
+        </div>
+        <div class="section-content">
+          <div class="info-grid">
+            <div class="info-item"><span>Atelier</span><strong>17 rue des Bâtisseurs</strong><small>75011 Paris</small></div>
+            <div class="info-item"><span>Zone d'intervention</span><strong>Paris et petite couronne</strong><small>Déplacement possible selon votre projet</small></div>
+            <div class="info-item"><span>Disponibilité</span><strong>Lun. - Ven.</strong><small>8h00 - 18h00, sur rendez-vous</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq-section">
+        <div class="section-heading heading-with-action">
+          <div>
+            <p class="eyebrow">Questions fréquentes</p>
+            <h2>Avant de commencer, quelques réponses.</h2>
+          </div>
+          <button class="section-toggle" type="button" aria-expanded="false">
+            <span>Afficher les réponses</span><strong aria-hidden="true">+</strong>
+          </button>
+        </div>
+        <div class="section-content">
+          <div class="faq-list">
+            <details><summary>Proposez-vous un devis avant intervention ?</summary><p>Oui. Après un premier échange, nous vous envoyons une proposition claire et détaillée.</p></details>
+            <details><summary>Quels bois utilisez-vous ?</summary><p>Nous sélectionnons des bois massifs et panneaux de qualité selon l'usage, le rendu et votre budget.</p></details>
+            <details><summary>Quel est le délai moyen d'un projet ?</summary><p>Il dépend de la pièce et de sa complexité. Le calendrier est défini ensemble avant le lancement.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="contact-intro">
+          <p class="eyebrow">Contact</p>
+          <h2>Donnez une forme à votre projet.</h2>
+          <p>
+            Décrivez votre besoin et recevez une première réponse sous 48 heures.
+          </p>
+          <div class="contact-details">
+            <a href="tel:0612345678">06 12 34 56 78</a>
+            <a href="mailto:contact@atelierbama.fr">contact@atelierbama.fr</a>
+            <span>Paris et petite couronne</span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
           <div>
             <label for="name">Nom</label>
             <input id="name" name="name" type="text" required />
@@ -106,7 +237,8 @@
             <textarea id="message" name="message" rows="6" required></textarea>
           </div>
 
-          <button type="submit">Envoyer la demande</button>
+          <button class="button" type="submit">Envoyer la demande</button>
+          <p class="form-feedback" role="status" aria-live="polite"></p>
         </form>
       </section>
     </main>
@@ -115,6 +247,9 @@
       <p>Atelier Bama - Menuiserie artisanale</p>
       <p>06 12 34 56 78 - contact@atelierbama.fr</p>
       <p>Paris et petite couronne</p>
+      <button class="back-to-top" type="button" aria-label="Revenir en haut de la page">
+        <span aria-hidden="true">&#8593;</span>
+      </button>
     </footer>
 
     <script src="js/script.js"></script>
